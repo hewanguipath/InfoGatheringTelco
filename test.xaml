@@ -1,0 +1,186 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="test" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1289.6,1420" sap2010:WorkflowViewState.IdRef="test_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:uuam="clr-namespace:UiPath.UIAutomationNext.Activities.Models;assembly=UiPath.UIAutomationNext.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="94">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Shared.Activities.Business</x:String>
+      <x:String>UiPath.CV</x:String>
+      <x:String>UiPath.Shared.ObjectLibrary</x:String>
+      <x:String>UiPath.CV.Activities</x:String>
+      <x:String>UiPath.CV.Activities.Interfaces</x:String>
+      <x:String>UiPath.CSV</x:String>
+      <x:String>UiPath.CSV.Activities</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>UiPath.Core.Activities.Storage</x:String>
+      <x:String>UiPath.Core.Activities.Orchestrator</x:String>
+      <x:String>Newtonsoft.Json</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="78">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>KanadCharting.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Python.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Word.Activities</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>UiPath.Python</AssemblyReference>
+      <AssemblyReference>UiPath.CV</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.CV.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>Newtonsoft.Json</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap:VirtualizedContainerService.HintSize="555.2,1355.2" sap2010:WorkflowViewState.IdRef="Sequence_22">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="ui:UiElement" Name="ElementToClick" />
+      <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="ExtractDataTable" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard WebDriverMode="{x:Null}" AttachMode="ByInstance" DisplayName="Use Browser Chrome: PSIRT Advisories | FortiGuard" sap:VirtualizedContainerService.HintSize="513.6,1262.4" sap2010:WorkflowViewState.IdRef="NApplicationCard_8" InteractionMode="DebuggerApi" ScopeGuid="c4024299-51c9-4e23-8b22-a1fd9577e283" Version="V2" WindowResize="Maximize">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="480,1045.6" sap2010:WorkflowViewState.IdRef="Sequence_38">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NForEachUiElement DisplayName="For Each UI Element" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='CurrentElement'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='Column0' attr='text'&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="438.4,951.2" sap2010:WorkflowViewState.IdRef="NForEachUiElement_12" LimitExtractionTo="Rows" MaximumResults="3" ScopeIdentifier="c4024299-51c9-4e23-8b22-a1fd9577e283" Version="V1">
+              <uix:NForEachUiElement.Body>
+                <ActivityAction x:TypeArguments="x:Int32">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentIndex" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="375.2,684" sap2010:WorkflowViewState.IdRef="Sequence_36">
+                    <Sequence.Variables>
+                      <Variable x:TypeArguments="x:String" Name="AffectedPrd" />
+                      <Variable x:TypeArguments="x:String" Name="Solutions" />
+                    </Sequence.Variables>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NClick ClickType="Single" DisplayName="Click" sap:VirtualizedContainerService.HintSize="333.6,137.6" sap2010:WorkflowViewState.IdRef="NClick_15" InUiElement="[CurrentElement]" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" Version="V1" />
+                    <uix:NGetText DisplayName="Get Text 'Solutions'" sap:VirtualizedContainerService.HintSize="333.6,157.6" sap2010:WorkflowViewState.IdRef="NGetText_10" ScopeIdentifier="c4024299-51c9-4e23-8b22-a1fd9577e283" Version="V1">
+                      <uix:NGetText.Target>
+                        <uix:TargetAnchorable BrowserURL="https://www.fortiguard.com/psirt/FG-IR-20-143" DesignTimeRectangle="944, 937, 1058, 111" ElementType="Text" FriendlyName="'Solutions Please'" FullSelectorArgument="&lt;webctrl parentid='two-column' class='detail-item' idx='4' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='two-column' class='detail-item' tag='DIV' type='' aaname='                                  Please upgrade to FortiMail version 7.2.0 or above Please upgrade to FortiMail version 7.0.4 or above              ' /&gt;" Guid="0d6db81d-4bb2-4369-806e-decc7e441c16" InformativeScreenshot="2c27d1a4cd3cb7ab677f049632a2366d.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='PSIRT Advisories | FortiGuard' /&gt;" SearchSteps="FuzzySelector" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                              <uix:Target DesignTimeRectangle="944, 937, 1058, 33" ElementType="Text" FriendlyName="'Solutions'" FullSelectorArgument="&lt;webctrl parentid='two-column' tag='H3' aaname='Solutions' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='two-column' tag='H3' aaname='Solutions' type='' class='' check:text='Solutions' /&gt;" ImageBase64="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" SearchSteps="Selector, FuzzySelector, Image" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NGetText.Target>
+                      <uix:NGetText.Text>
+                        <OutArgument x:TypeArguments="x:String">[Solutions]</OutArgument>
+                      </uix:NGetText.Text>
+                    </uix:NGetText>
+                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="333.6,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_17" Message="[AffectedPrd + &quot;; &quot;+Solutions]" />
+                    <uix:NNavigateBrowser DisplayName="Navigate Browser - Go Back" sap:VirtualizedContainerService.HintSize="333.6,82.4" sap2010:WorkflowViewState.IdRef="NNavigateBrowser_1" Version="V1" />
+                  </Sequence>
+                </ActivityAction>
+              </uix:NForEachUiElement.Body>
+              <uix:NForEachUiElement.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="1313, -533, 1904, 8588" FriendlyName="'Monthly PSIRT Advisories'" FullSelectorArgument="&lt;webctrl tag='SECTION' /&gt;" Guid="f55bc9fe-b173-4af7-865f-c8ec21530c31" InformativeScreenshot="48b63868fb1b2a9040e4dd48c28ccefe.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='PSIRT Advisories | FortiGuard' /&gt;" SearchSteps="Selector" Visibility="Interactive" />
+              </uix:NForEachUiElement.Target>
+              <uix:NForEachUiElement.Variables>
+                <Variable x:TypeArguments="ui:UiElement" Name="CurrentElement" />
+                <Variable x:TypeArguments="x:String" Name="CurrentElement_Label" />
+              </uix:NForEachUiElement.Variables>
+              <uix:NForEachUiElement.VariablesMetadata>
+                <scg:List x:TypeArguments="uuam:VariableMetadata" x:Key="Column0" Capacity="4">
+                  <uuam:VariableMetadata Name="CurrentElement" Type="ui:UiElement" />
+                  <uuam:VariableMetadata Name="CurrentElement_Label" Type="x:String" />
+                </scg:List>
+              </uix:NForEachUiElement.VariablesMetadata>
+            </uix:NForEachUiElement>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-2569, -9, 2578, 1408" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="054e66967f010083f96d43bb7ff33c63.png" Selector="&lt;html app='chrome.exe' title='PSIRT Advisories | FortiGuard' /&gt;" Url="https://www.fortiguard.com/psirt" />
+      </uix:NApplicationCard.TargetApp>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
